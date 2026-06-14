@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sona — Soyez payé à temps, sans jamais relancer</title>
+<meta name="description" content="Sona surveille vos factures, relance vos clients au bon moment et prévoit votre trésorerie à 90 jours. Encaissez 11 jours plus vite, sans relance manuelle." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ambient background -->
+<div class="bg-fx"><div class="glow g1"></div><div class="glow g2"></div><div class="glow g3"></div></div>
+<div class="grid-lines"></div>
+<div class="grain"></div>
+
+<!-- ===================== NAV ===================== -->
+<header id="hd">
+  <nav class="nav wrap">
+    <a href="#" class="brand"><svg class="mark" viewBox="0 0 32 32" width="32" height="32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs><linearGradient id="sonaMark" x1="3" y1="3" x2="29" y2="29" gradientUnits="userSpaceOnUse"><stop stop-color="#9be0ff"/><stop offset="1" stop-color="#ab8bff"/></linearGradient></defs><rect x="1.5" y="1.5" width="29" height="29" rx="9.5" fill="#0a0f22" stroke="url(#sonaMark)" stroke-opacity=".4"/><circle cx="11" cy="16" r="2.5" fill="url(#sonaMark)"/><path d="M15.5 10.4a7.2 7.2 0 0 1 0 11.2" fill="none" stroke="url(#sonaMark)" stroke-width="2.4" stroke-linecap="round"/><path d="M20 6.8a12.6 12.6 0 0 1 0 18.4" fill="none" stroke="url(#sonaMark)" stroke-width="2.4" stroke-linecap="round" stroke-opacity=".55"/></svg>Sona</a>
+    <div class="nav-links">
+      <a href="#fonctionnalites">Fonctionnalités</a>
+      <a href="#resultats">Résultats</a>
+      <a href="#tarifs">Tarifs</a>
+      <a href="#faq">FAQ</a>
+    </div>
+    <div class="nav-cta">
+      <a href="#start" class="btn">Démarrer gratuitement</a>
+      <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+</header>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero">
+  <div class="wrap hero-center">
+    <span class="eyebrow reveal"><span class="dot"></span>Nouveau · Connexion bancaire en 2 minutes</span>
+    <h1 class="reveal d1">Soyez payé à temps,<br><span class="serif">sans jamais relancer.</span></h1>
+    <p class="sub reveal d2">Sona s'occupe des relances que vous remettez toujours à plus tard, au bon moment et dans votre ton. Vos clients <b>paient plus vite</b>, et vous suivez votre trésorerie sans toucher à un tableur.</p>
+    <div class="hero-actions reveal d3">
+      <div class="row">
+        <a href="#start" class="btn btn-lg">Démarrer gratuitement <span class="arrow">→</span></a>
+        <a href="#demo" class="btn btn-ghost btn-lg">Voir Sona en action</a>
+      </div>
+      <span class="cta-note"><b>Sans carte bancaire.</b> Prêt en 5 minutes. Annulable en un clic.</span>
+    </div>
+    <div class="proof-strip reveal d4">
+      <div class="avatars"><span></span><span></span><span></span><span></span><span></span></div>
+      <div class="proof-text"><span class="stars">★★★★★</span><br><b>2 340+ entreprises</b> encaissent 11 jours plus vite.</div>
+    </div>
+  </div>
+
+  <div class="hero-dash">
+    <div class="dash">
+      <div class="dash-bar"><span class="d"></span><span class="d"></span><span class="d"></span><span class="url">app.sona.io / tableau-de-bord</span></div>
+      <div class="dash-body">
+        <aside class="dash-side">
+          <div class="nav-i on"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="7" height="9"/><rect x="14" y="3" width="7" height="5"/><rect x="14" y="12" width="7" height="9"/><rect x="3" y="16" width="7" height="5"/></svg>Tableau de bord</div>
+          <div class="nav-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg>Factures</div>
+          <div class="nav-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7Z"/></svg>Relances</div>
+          <div class="nav-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 3v18h18M7 14l4-4 3 3 5-6"/></svg>Prévisions</div>
+          <div class="nav-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M19 12a7 7 0 0 0-.1-1l2-1.6-2-3.4-2.3 1a7 7 0 0 0-1.7-1L16.5 2h-4l-.4 2.5a7 7 0 0 0-1.7 1l-2.3-1-2 3.4L5.1 11a7 7 0 0 0 0 2l-2 1.6 2 3.4 2.3-1a7 7 0 0 0 1.7 1l.4 2.5h4l.4-2.5a7 7 0 0 0 1.7-1l2.3 1 2-3.4-2-1.6a7 7 0 0 0 .1-1Z"/></svg>Réglages</div>
+        </aside>
+        <div class="dash-main">
+          <div class="dash-row">
+            <h4>Bonjour Camille 👋</h4>
+            <span class="dash-pill">● Tout est à jour</span>
+          </div>
+          <div class="kpis">
+            <div class="kpi"><small>Encaissé ce mois</small><b><span class="dnum" data-to="84320" data-suffix=" €">0 €</span></b><span class="up">+22%</span></div>
+            <div class="kpi"><small>En attente</small><b><span class="dnum" data-to="19480" data-suffix=" €">0 €</span></b><span class="up down">5 factures</span></div>
+            <div class="kpi"><small>DSO moyen</small><b><span class="dnum" data-to="27" data-suffix=" j">0 j</span></b><span class="up">−11 j</span></div>
+          </div>
+          <div class="chart-card">
+            <div class="ch-head"><span>Trésorerie prévue · 90 jours</span><b style="color:#43e0a3">+18 240 €</b></div>
+            <svg viewBox="0 0 520 130" preserveAspectRatio="none" style="width:100%;height:120px">
+              <defs>
+                <linearGradient id="area" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="rgba(58,215,255,.35)"/>
+                  <stop offset="100%" stop-color="rgba(58,215,255,0)"/>
+                </linearGradient>
+                <linearGradient id="ln" x1="0" y1="0" x2="1" y2="0">
+                  <stop offset="0%" stop-color="#3ad7ff"/><stop offset="100%" stop-color="#8b5cf6"/>
+                </linearGradient>
+              </defs>
+              <path class="dash-area" d="M0,95 C60,90 90,70 140,72 C190,74 220,40 270,46 C320,52 350,30 400,22 C450,14 490,18 520,10 L520,130 L0,130 Z" fill="url(#area)"/>
+              <path class="spark-line" pathLength="1" d="M0,95 C60,90 90,70 140,72 C190,74 220,40 270,46 C320,52 350,30 400,22 C450,14 490,18 520,10" fill="none" stroke="url(#ln)" stroke-width="2.5" stroke-linecap="round"/>
+              <circle class="dash-dot" cx="400" cy="22" r="5" fill="#fff"/><circle class="dash-dot" cx="400" cy="22" r="9" fill="rgba(58,215,255,.3)"/>
+            </svg>
+          </div>
+          <div class="invoices">
+            <div class="inv"><div class="who"><span class="ava">NW</span><div><b style="color:#fff">Northwind SAS</b><br><span style="color:var(--muted-2)">Facture #2841 · 6 200 €</span></div></div><span class="st paid">Encaissée</span></div>
+            <div class="inv inv-flip"><div class="who"><span class="ava" style="background:linear-gradient(135deg,#3ad7ff,#3b7dff)">LM</span><div><b style="color:#fff">Lumio Studio</b><br><span style="color:var(--muted-2)">Facture #2840 · 3 900 €</span></div></div><span class="st sent">Relance envoyée</span></div>
+            <div class="inv"><div class="who"><span class="ava" style="background:linear-gradient(135deg,#8b5cf6,#d36cff)">VE</span><div><b style="color:#fff">Verda Co</b><br><span style="color:var(--muted-2)">Facture #2838 · 9 380 €</span></div></div><span class="st late">Échéance J+2</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dash-fade"></div>
+  </div>
+</section>
+
+<!-- ===================== LOGOS ===================== -->
+<section class="logos wrap">
+  <p class="lbl reveal">Ils ne courent plus après leurs paiements</p>
+  <div class="marquee reveal">
+    <div class="marquee-track" id="mtrack">
+      <span class="logo-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M12 3v18"/></svg>Northwind</span>
+      <span class="logo-item"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="9"/></svg>Lumio</span>
+      <span class="logo-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="4"/></svg>Atelier&nbsp;Q</span>
+      <span class="logo-item"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 22,20 2,20"/></svg>Verda</span>
+      <span class="logo-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12c4-8 12-8 16 0-4 8-12 8-16 0Z"/></svg>Maison&nbsp;Brae</span>
+      <span class="logo-item"><svg viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="8" width="18" height="8" rx="4"/></svg>Cobalt</span>
+      <span class="logo-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v18M3 12h18"/></svg>Northwind</span>
+      <span class="logo-item"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="9"/></svg>Lumio</span>
+      <span class="logo-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="4"/></svg>Atelier&nbsp;Q</span>
+      <span class="logo-item"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 22,20 2,20"/></svg>Verda</span>
+      <span class="logo-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12c4-8 12-8 16 0-4 8-12 8-16 0Z"/></svg>Maison&nbsp;Brae</span>
+      <span class="logo-item"><svg viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="8" width="18" height="8" rx="4"/></svg>Cobalt</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PROBLEM / AGITATION ===================== -->
+<section class="problem wrap" id="probleme">
+  <div class="prob-card reveal">
+    <div class="prob-inner">
+      <div class="prob-left">
+        <span class="eyebrow"><span class="dot"></span>Le vrai problème</span>
+        <h2>Vous ne pilotez pas votre trésorerie.<br>Vous la subissez.</h2>
+        <p>Vos clients paient en retard. Vos relances traînent. Et chaque fin de mois, la même question revient sans réponse claire : <b style="color:#fff">« est-ce que ça passe&nbsp;? »</b></p>
+      </div>
+      <ul class="pains">
+        <li><span class="x">✕</span><div>Des <b>factures payées en retard</b> que vous découvrez bien trop tard.</div></li>
+        <li><span class="x">✕</span><div>Des <b>relances que personne n'ose envoyer</b>, par peur de froisser le client.</div></li>
+        <li><span class="x">✕</span><div>Un <b>fichier Excel</b> qui n'est jamais à jour, recopié à la main.</div></li>
+        <li><span class="x">✕</span><div><b>4 heures par semaine</b> perdues à pointer qui a payé, qui doit encore.</div></li>
+        <li><span class="x">✕</span><div>Aucune visibilité sur le <b>cash des 90 prochains jours.</b></div></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== HOW IT WORKS ===================== -->
+<section class="pad wrap" id="demo">
+  <div class="sec-head reveal">
+    <span class="eyebrow"><span class="dot"></span>Comment ça marche</span>
+    <h2>Vous le branchez une fois.<br>Sona gère le reste, <span class="serif">jour après jour.</span></h2>
+    <p>Sona se branche sur ce que vous avez déjà. Pas de migration, pas de formation. Vous allumez, et le cash rentre.</p>
+  </div>
+  <div class="steps">
+    <div class="step reveal d1">
+      <div class="si"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8Z"/></svg></div>
+      <h3>1. Connectez</h3>
+      <p>Reliez votre banque et votre outil de facturation en 2 minutes. Connexion chiffrée, lecture seule. Rien à installer.</p>
+    </div>
+    <div class="step reveal d2">
+      <div class="si"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7Z"/></svg></div>
+      <h3>2. Sona relance</h3>
+      <p>Au bon moment, dans votre ton, automatiquement. Vos clients reçoivent un rappel poli avant même le retard. Vous validez ou laissez faire.</p>
+    </div>
+    <div class="step reveal d3">
+      <div class="si"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 3v18h18M7 14l4-4 3 3 5-6"/></svg></div>
+      <h3>3. Vous anticipez</h3>
+      <p>Votre trésorerie prévue à 90 jours, en temps réel. Vous savez ce qui rentre, quand, et ce qu'il reste, bien avant la fin du mois.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FEATURES BENTO ===================== -->
+<section class="pad wrap" id="fonctionnalites" style="padding-top:20px">
+  <div class="sec-head reveal">
+    <span class="eyebrow"><span class="dot"></span>Tout au même endroit</span>
+    <h2>Le copilote de votre <span class="serif">cash.</span></h2>
+    <p>Relances, prévisions, réconciliation, alertes. Ce que faisait votre fichier Excel, en mieux et sans vous.</p>
+  </div>
+  <div class="bento">
+    <div class="cell c-tall feature-hero reveal">
+      <div>
+        <span class="tag">Phare</span>
+        <div class="fi"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7Z"/></svg></div>
+        <h3>Relances automatiques intelligentes</h3>
+        <p>Sona apprend le comportement de chaque client et choisit le bon message, le bon moment, le bon ton. 89 % des factures sont payées sans que vous leviez le petit doigt.</p>
+      </div>
+      <div class="mini-chart" aria-hidden="true">
+        <i style="height:30%;animation-delay:.05s"></i><i style="height:48%;animation-delay:.1s"></i><i style="height:42%;animation-delay:.15s"></i><i style="height:66%;animation-delay:.2s"></i><i style="height:58%;animation-delay:.25s"></i><i style="height:82%;animation-delay:.3s"></i><i style="height:74%;animation-delay:.35s"></i><i style="height:100%;animation-delay:.4s"></i>
+      </div>
+    </div>
+    <div class="cell c-mid reveal d1">
+      <div class="fi"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 3v18h18M7 14l4-4 3 3 5-6"/></svg></div>
+      <h3>Prévision à 90 jours</h3>
+      <p>Voyez votre solde futur jour par jour. Sona anticipe les entrées et les sorties avec vos données réelles.</p>
+    </div>
+    <div class="cell c-mid reveal d2">
+      <div class="fi"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 12a9 9 0 1 1-9-9M21 3v6h-6"/></svg></div>
+      <h3>Réconciliation automatique</h3>
+      <p>Chaque virement est rapproché de sa facture tout seul. Fini le pointage manuel du vendredi soir.</p>
+    </div>
+    <div class="cell c-mid reveal d1">
+      <div class="fi"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2a7 7 0 0 0-7 7c0 5-3 6-3 6h20s-3-1-3-6a7 7 0 0 0-7-7ZM10 21h4"/></svg></div>
+      <h3>Alertes avant le découvert</h3>
+      <p>Sona vous prévient quelques jours avant un trou de trésorerie. Vous avez le temps d'agir, au lieu de subir.</p>
+    </div>
+    <div class="cell c-mid reveal d2">
+      <div class="fi"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20Z"/></svg></div>
+      <h3>Multi-comptes, multi-devises</h3>
+      <p>Plusieurs banques, plusieurs sociétés, plusieurs devises. Une seule vue d'ensemble, consolidée.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== METRICS / RESULTS ===================== -->
+<section class="metrics wrap" id="resultats">
+  <div class="sec-head reveal">
+    <span class="eyebrow"><span class="dot"></span>Les résultats, en chiffres</span>
+    <h2>Ce que change Sona, <span class="serif">dès le premier mois.</span></h2>
+    <p>Moyennes constatées sur 2 340 entreprises après 30 jours d'utilisation.</p>
+  </div>
+  <div class="metric-grid">
+    <div class="metric reveal d1"><div class="num"><span class="count" data-to="11">0</span> j</div><div class="lbl">de délai de paiement en moins</div></div>
+    <div class="metric reveal d2"><div class="num"><span class="count" data-to="89">0</span>%</div><div class="lbl">de factures payées sans relance manuelle</div></div>
+    <div class="metric reveal d3"><div class="num"><span class="count" data-to="4">0</span>h</div><div class="lbl">récupérées chaque semaine</div></div>
+    <div class="metric reveal d4"><div class="num"><span class="count" data-to="98">0</span>%</div><div class="lbl">restent après le premier mois</div></div>
+  </div>
+</section>
+
+<!-- ===================== TESTIMONIALS ===================== -->
+<section class="pad wrap">
+  <div class="sec-head reveal">
+    <span class="eyebrow"><span class="dot"></span>Des clients plus sereins</span>
+    <h2>Le calme retrouvé, <span class="serif">chaque fin de mois.</span></h2>
+  </div>
+  <div class="tcols">
+    <div class="quote big reveal">
+      <div class="stars">★★★★★</div>
+      <p>« J'ai arrêté de relancer mes clients à la main. Sona le fait mieux, plus tôt, et sans que ça crée de gêne. On est passés de 45 à 28 jours de délai de paiement en deux mois. »</p>
+      <div class="who"><span class="ava">CL</span><div><b>Camille Laporte</b><small>Fondatrice · Studio Lumio</small></div></div>
+    </div>
+    <div class="quote reveal d1">
+      <div class="stars">★★★★★</div>
+      <p>« La prévision à 90 jours a changé ma façon de gérer la boîte. Je sais enfin si je peux embaucher, investir, ou s'il faut attendre. »</p>
+      <div class="who"><span class="ava" style="background:linear-gradient(135deg,#3ad7ff,#3b7dff)">TR</span><div><b>Thomas Rivière</b><small>Gérant · Atelier Q</small></div></div>
+    </div>
+    <div class="quote reveal d2">
+      <div class="stars">★★★★★</div>
+      <p>« Mon comptable adore. Tout est réconcilié, rien ne traîne. On a gagné une demi-journée par semaine, facile. »</p>
+      <div class="who"><span class="ava" style="background:linear-gradient(135deg,#43e0a3,#3ad7ff)">SM</span><div><b>Sarah Mensah</b><small>DAF · Verda Co</small></div></div>
+    </div>
+    <div class="quote reveal d1">
+      <div class="stars">★★★★★</div>
+      <p>« Installé un mardi soir, premières relances parties le mercredi. Trois factures bloquées depuis des semaines réglées dans la foulée. »</p>
+      <div class="who"><span class="ava" style="background:linear-gradient(135deg,#8b5cf6,#d36cff)">NB</span><div><b>Nicolas Bret</b><small>Cofondateur · Maison Brae</small></div></div>
+    </div>
+    <div class="quote reveal d2">
+      <div class="stars">★★★★★</div>
+      <p>« Ce que je préfère ? Ne plus avoir cette boule au ventre le 28 du mois. Je vois mon cash, je dors mieux. »</p>
+      <div class="who"><span class="ava" style="background:linear-gradient(135deg,#ff8a6c,#8b5cf6)">AD</span><div><b>Aïcha Diallo</b><small>Fondatrice · Cobalt</small></div></div>
+    </div>
+    <div class="quote reveal">
+      <div class="stars">★★★★★</div>
+      <p>« On testait un tableur partagé avant. C'était l'enfer. Sona a remplacé tout ça en une après-midi. »</p>
+      <div class="who"><span class="ava" style="background:linear-gradient(135deg,#3b7dff,#43e0a3)">YK</span><div><b>Yann Keller</b><small>CEO · Northwind</small></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PRICING ===================== -->
+<section class="pad wrap" id="tarifs" style="padding-top:30px">
+  <div class="sec-head reveal">
+    <span class="eyebrow"><span class="dot"></span>Tarifs clairs</span>
+    <h2>Un prix. <span class="serif">Largement remboursé</span> dès la première facture encaissée.</h2>
+    <p>14 jours d'essai gratuit, sans carte. Vous ne payez que si Sona vous fait gagner du temps et du cash.</p>
+  </div>
+  <div class="price-grid">
+    <div class="plan reveal d1">
+      <div class="pn">Solo</div>
+      <p class="pd">Pour les indépendants et les petites structures.</p>
+      <div class="pp">29 €<small> /mois</small></div>
+      <div class="per">par société · facturation mensuelle</div>
+      <ul>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>Relances automatiques illimitées</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>1 compte bancaire connecté</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>Prévision à 30 jours</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>Réconciliation automatique</li>
+      </ul>
+      <a href="#start" class="btn btn-ghost">Démarrer gratuitement</a>
+    </div>
+    <div class="plan featured reveal d2">
+      <div class="pn">Studio</div>
+      <p class="pd">Pour les agences et PME qui veulent tout piloter.</p>
+      <div class="pp">79 €<small> /mois</small></div>
+      <div class="per">par société · facturation mensuelle</div>
+      <ul>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg><b style="color:#fff">Tout Solo, plus :</b></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>Comptes & devises illimités</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>Prévision à 90 jours + alertes</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>Relances personnalisées par client</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>Accès comptable inclus</li>
+      </ul>
+      <a href="#start" class="btn">Démarrer gratuitement</a>
+    </div>
+    <div class="plan reveal d3">
+      <div class="pn">Échelle</div>
+      <p class="pd">Pour les groupes multi-sociétés et la finance d'équipe.</p>
+      <div class="pp">Sur&nbsp;mesure</div>
+      <div class="per">accompagnement dédié</div>
+      <ul>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg><b style="color:#fff">Tout Studio, plus :</b></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>Utilisateurs & rôles illimités</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>Consolidation multi-entités</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>API & intégrations sur mesure</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>Accompagnement dédié</li>
+      </ul>
+      <a href="#start" class="btn btn-ghost">Démarrer gratuitement</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FAQ ===================== -->
+<section class="pad wrap" id="faq" style="padding-top:30px">
+  <div class="sec-head reveal">
+    <span class="eyebrow"><span class="dot"></span>On répond à tout</span>
+    <h2>Les questions que vous <span class="serif">vous posez déjà.</span></h2>
+  </div>
+  <div class="faq">
+    <div class="q reveal"><div class="qh">Est-ce que mes données bancaires sont en sécurité&nbsp;?<span class="pm">+</span></div><div class="qb"><p>Oui. Sona se connecte à votre banque en <b>lecture seule</b>, via les agrégateurs agréés (DSP2). Nous ne pouvons jamais déplacer d'argent. Toutes les données sont chiffrées de bout en bout et hébergées en Europe. Conformité RGPD complète.</p></div></div>
+    <div class="q reveal"><div class="qh">Combien de temps pour mettre Sona en place&nbsp;?<span class="pm">+</span></div><div class="qb"><p>Environ 5 minutes. Vous connectez votre banque et votre outil de facturation, Sona importe l'historique et configure les premières relances. Aucune formation, aucune migration de données à faire vous-même.</p></div></div>
+    <div class="q reveal"><div class="qh">Est-ce que Sona va froisser mes clients avec les relances&nbsp;?<span class="pm">+</span></div><div class="qb"><p>C'est tout l'inverse. Sona envoie des rappels <b>polis, dans votre ton</b>, au bon moment — souvent avant même l'échéance. Vous gardez le contrôle total : validez chaque relance, ou laissez Sona gérer en pilote automatique pour les clients de confiance.</p></div></div>
+    <div class="q reveal"><div class="qh">Sona fonctionne-t-il avec mon outil de facturation&nbsp;?<span class="pm">+</span></div><div class="qb"><p>Sona s'intègre avec les principaux outils (Pennylane, Qonto, Stripe, Sellsy, Indy, factures PDF…) et la plupart des banques françaises et européennes. Si le vôtre n'est pas encore connecté, dites-le nous — on l'ajoute vite.</p></div></div>
+    <div class="q reveal"><div class="qh">Et mon comptable dans tout ça&nbsp;?<span class="pm">+</span></div><div class="qb"><p>Il va l'adorer. Tout est réconcilié automatiquement et exportable. Vous pouvez lui donner un accès dédié pour qu'il retrouve des comptes propres, à jour, sans avoir à vous courir après.</p></div></div>
+    <div class="q reveal"><div class="qh">Je peux annuler quand je veux&nbsp;?<span class="pm">+</span></div><div class="qb"><p>Oui, en un clic, sans justification ni frais. Les 14 premiers jours sont gratuits et sans carte bancaire. Vous ne payez que si Sona vous fait gagner du temps et du cash.</p></div></div>
+  </div>
+</section>
+
+<!-- ===================== FINAL CTA ===================== -->
+<section class="final wrap" id="start">
+  <div class="final-card reveal">
+    <div class="gring"></div>
+    <h2>Vos factures cachent du cash.<br><span class="serif">Allez le chercher.</span></h2>
+    <p>Connectez Sona en 5 minutes. Voyez votre première relance partir aujourd'hui.</p>
+    <div class="row">
+      <a href="#" class="btn btn-lg">Démarrer gratuitement <span class="arrow">→</span></a>
+    </div>
+    <span class="cta-note" style="margin-top:18px"><b>Sans carte bancaire.</b> 14 jours gratuits. Annulable en un clic.</span>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="#" class="brand"><svg class="mark" viewBox="0 0 32 32" width="32" height="32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs><linearGradient id="sonaMark" x1="3" y1="3" x2="29" y2="29" gradientUnits="userSpaceOnUse"><stop stop-color="#9be0ff"/><stop offset="1" stop-color="#ab8bff"/></linearGradient></defs><rect x="1.5" y="1.5" width="29" height="29" rx="9.5" fill="#0a0f22" stroke="url(#sonaMark)" stroke-opacity=".4"/><circle cx="11" cy="16" r="2.5" fill="url(#sonaMark)"/><path d="M15.5 10.4a7.2 7.2 0 0 1 0 11.2" fill="none" stroke="url(#sonaMark)" stroke-width="2.4" stroke-linecap="round"/><path d="M20 6.8a12.6 12.6 0 0 1 0 18.4" fill="none" stroke="url(#sonaMark)" stroke-width="2.4" stroke-linecap="round" stroke-opacity=".55"/></svg>Sona</a>
+        <p>Le copilote de trésorerie qui relance, encaisse et anticipe à votre place.</p>
+        <a href="#start" class="btn">Démarrer gratuitement</a>
+      </div>
+      <div class="foot-col">
+        <h5>Produit</h5>
+        <a href="#fonctionnalites">Fonctionnalités</a>
+        <a href="#resultats">Résultats</a>
+        <a href="#tarifs">Tarifs</a>
+        <a href="#demo">Démo</a>
+      </div>
+      <div class="foot-col">
+        <h5>Ressources</h5>
+        <a href="#faq">FAQ</a>
+        <a href="#">Guide trésorerie</a>
+        <a href="#">Intégrations</a>
+        <a href="#">Sécurité</a>
+      </div>
+      <div class="foot-col">
+        <h5>Entreprise</h5>
+        <a href="#">À propos</a>
+        <a href="#">Contact</a>
+        <a href="#">Mentions légales</a>
+        <a href="#">Confidentialité</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Sona. Conçu en Europe. Données hébergées en Europe.</span>
+      <div class="socials">
+        <a href="#" aria-label="LinkedIn"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.76-2.05C20.4 8.65 21 11 21 14.1V21h-4v-6.1c0-1.45-.03-3.3-2-3.3s-2.3 1.57-2.3 3.2V21H9z"/></svg></a>
+        <a href="#" aria-label="X"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7.6 8.7L23 22h-6.9l-5.4-7-6.2 7H1.4l8.2-9.3L1 2h7l4.9 6.5L18.9 2Zm-2.4 18h1.7L7.6 3.8H5.8z"/></svg></a>
+        <a href="#" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
